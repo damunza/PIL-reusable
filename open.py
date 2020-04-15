@@ -1,4 +1,5 @@
 from PIL import Image
+from imtools import get_images as GI
 import os
 
 pil_im = Image.open('/home/name/Downloads/IMG-20200413-WA0005.jpg')
