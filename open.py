@@ -9,4 +9,4 @@ pil_im = Image.open('/home/name/Downloads/IMG-20200413-WA0005.jpg')
 
 x = GI('/home/name/Downloads/',['.jpg', '.png'])
 
-print(len(x))
+print(x)
