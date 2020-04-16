@@ -2,11 +2,14 @@ from PIL import Image
 from imtools import get_images as GI
 import os
 
-pil_im = Image.open('/home/name/Downloads/IMG-20200413-WA0005.jpg')
-
-# pil_im.show()
-# if using a home directory file use the sudo command
-
 x = GI('/home/name/Downloads/',['.jpg', '.png'])
 
-print(x)
+pil_im = Image.open(x[1])
+
+box = (100,100,400,400)
+work = pil_im.copy()
+region = work.crop(box)
+region.save('region.jpg')
+
+# displaying the image 
+region.show()
